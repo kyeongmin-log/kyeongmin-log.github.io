@@ -106,3 +106,26 @@ button {
 .home__btn:hover {
   background-color: tomato;
 }
+
+/* About */
+#about {
+  display: flex;
+  justify-content: center;
+  margin: 96px auto;
+  width: 75%;
+}
+
+.about__me {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  margin-right: 96px;
+}
+
+.info__title {
+  font-family: "Roboto", sans-serif;
+}
+
+.info__description {
+  color: var(--color-modern-black);
+}
