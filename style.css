@@ -2,6 +2,7 @@
   /* Color */
   --color-modern-black: #494a44;
   --color-white: #fffffb;
+  --color-light-grey: #f9f9f9;
   /* Font Size */
   --font-large: 48px;
   --font-medium: 28px;
@@ -62,14 +63,14 @@ button {
   display: flex;
 }
 
-.list__item {
+.menu__list .list__item {
   padding: 12px 24px;
   border-radius: 4px;
   font-size: var(--font-small);
   transition: all var(--animation-duration);
 }
 
-.list__item:hover {
+.menu__list .list__item:hover {
   background-color: tomato;
   cursor: pointer;
 }
@@ -127,5 +128,66 @@ button {
 }
 
 .info__description {
+  color: var(--color-modern-black);
+}
+
+/* Skill */
+#skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-light-grey);
+  padding: 36px;
+}
+
+.skill__title {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.skill__sub-title {
+  margin: 0;
+  color: var(--color-modern-black);
+}
+
+.skill__list {
+  display: flex;
+}
+
+.skill__list .list__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill__list .list__item .item__icon {
+  background-color: gray;
+  width: 100px;
+  height: 100px;
+  line-height: 120px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.skill__list .list__item .item__icon i {
+  font-size: 48px;
+  color: white;
+  transition: all var(--animation-duration);
+}
+
+.skill__list .list__item .item__icon i:hover {
+  color: tomato;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.skill__list .list__item .item__title {
+  margin: 12px 0;
+  font-size: var(--font-regular);
+  font-weight: 900;
+}
+
+.skill__list .list__item .item__description {
+  text-align: center;
   color: var(--color-modern-black);
 }

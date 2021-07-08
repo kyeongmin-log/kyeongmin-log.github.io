@@ -23,3 +23,10 @@
 + 나에 대해 소개하는 About HTML/CSS 코딩
 + 사진을 저장할 imgs 폴더 생성
 ```
+
+> HTML/CSS : Skill
+
+```
++ 사용할 수 있는 기술을 소개하는 Skill HTML/CSS 코딩
++ fontawesome 아이콘 사용
+```
