@@ -30,3 +30,12 @@
 + 사용할 수 있는 기술을 소개하는 Skill HTML/CSS 코딩
 + fontawesome 아이콘 사용
 ```
+
+> HTML/CSS : Project
+
+```
++ 프로젝트를 소개하는 Project HTML/CSS 코딩
++ imgs 폴더에 test-img.jpg 파일 추가
+? CSS의 class명을 조금 더 효율적으로 관리할 수 없을까?
+    > SASS(SCSS)라는 기술이 있다. HTML/CSS 작업이 끝나면 설치하여 적용해보자.
+```
