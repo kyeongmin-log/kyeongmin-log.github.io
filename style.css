@@ -52,7 +52,7 @@ button {
   font-weight: 900;
   color: var(--color-white);
   font-size: var(--font-medium);
-  transition: all var(--animation-duration);
+  transition: color var(--animation-duration);
 }
 
 .menu__title:hover {
@@ -67,7 +67,7 @@ button {
   padding: 12px 24px;
   border-radius: 4px;
   font-size: var(--font-small);
-  transition: all var(--animation-duration);
+  transition: background-color var(--animation-duration);
 }
 
 .menu__list .list__item:hover {
@@ -101,7 +101,7 @@ button {
   background-color: var(--color-modern-black);
   border-radius: 4px;
   color: var(--color-white);
-  transition: all var(--animation-duration);
+  transition: background-color var(--animation-duration);
 }
 
 .home__btn:hover {
@@ -246,4 +246,41 @@ button {
 .project__list .list__item .item__description:hover {
   opacity: 1;
   cursor: pointer;
+}
+
+/* Contact */
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-light-grey);
+  padding: 36px;
+}
+
+.contact__title {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.contact__email {
+  margin: 12px 0;
+  font-size: var(--font-medium);
+  font-weight: 900;
+  color: var(--color-modern-black);
+}
+
+.contact__github i {
+  font-size: 48px;
+  color: black;
+  transition: transform var(--animation-duration);
+}
+
+.contact__github i:hover {
+  transform: scale(1.1);
+}
+
+.create {
+  margin: 12px 0;
+  font-size: var(--font-micro);
+  color: grey;
 }
