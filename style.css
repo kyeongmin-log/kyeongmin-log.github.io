@@ -44,6 +44,7 @@ button {
   justify-content: space-between;
   align-items: center;
   background-color: var(--color-modern-black);
+  /* background-color: rgba(73, 74, 68, 0.9); */
   color: var(--color-white);
   border-bottom: 1px solid grey;
 }
@@ -77,12 +78,19 @@ button {
 
 /* Home */
 #home {
-  padding: 48px;
+  padding-bottom: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: var(--color-white);
   background-color: rgba(73, 74, 68, 0.9);
+}
+
+.home__img {
+  margin: 50px 0;
+  width: 350px;
+  height: 350px;
+  border-radius: 4px;
 }
 
 .home__title {
@@ -92,6 +100,8 @@ button {
 
 .home__description {
   margin: 36px 0;
+  font-size: var(--font-regular);
+  text-align: center;
 }
 
 .home__btn {
@@ -111,24 +121,56 @@ button {
 /* About */
 #about {
   display: flex;
-  justify-content: center;
-  margin: 96px auto;
+  flex-direction: column;
+  align-items: center;
+  margin: 48px auto;
   width: 50%;
 }
 
-.about__me {
-  width: 350px;
-  height: 350px;
-  border-radius: 50%;
-  margin-right: 96px;
+.about__title {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: var(--font-large);
 }
 
-.info__title {
-  font-family: "Roboto", sans-serif;
+.about__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .info__description {
   color: var(--color-modern-black);
+  font-size: var(--font-regular);
+}
+
+.about__education {
+  display: flex;
+  padding: 48px 0;
+  width: 100%;
+  justify-content: start;
+  align-items: center;
+}
+
+.education__logo {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  margin-right: 24px;
+}
+
+.education__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.education__info .info__title {
+  font-size: var(--font-regular);
+  font-weight: 900;
+}
+.education__info .info__description {
+  font-size: var(--font-small);
+  color: var(--color-morden-black);
 }
 
 /* Skill */
@@ -143,6 +185,7 @@ button {
 .skill__title {
   margin: 0;
   font-family: "Roboto", sans-serif;
+  font-size: var(--font-large);
 }
 
 .skill__sub-title {
@@ -152,6 +195,8 @@ button {
 
 .skill__list {
   display: flex;
+  margin: 0;
+  padding: 48px;
 }
 
 .skill__list .list__item {
@@ -163,15 +208,15 @@ button {
 
 .skill__list .list__item .item__icon {
   background-color: gray;
-  width: 100px;
-  height: 100px;
-  line-height: 120px;
+  width: 150px;
+  height: 150px;
+  line-height: 180px;
   text-align: center;
   border-radius: 50%;
 }
 
 .skill__list .list__item .item__icon i {
-  font-size: 48px;
+  font-size: 64px;
   color: white;
   transition: all var(--animation-duration);
 }
@@ -183,14 +228,16 @@ button {
 }
 
 .skill__list .list__item .item__title {
-  margin: 12px 0;
-  font-size: var(--font-regular);
+  margin: 24px 0;
+  font-size: var(--font-medium);
+  color: var(--color-modern-black);
   font-weight: 900;
 }
 
 .skill__list .list__item .item__description {
   text-align: center;
   color: var(--color-modern-black);
+  font-size: var(--font-regular);
   width: 75%;
 }
 
@@ -205,6 +252,7 @@ button {
 .project__title {
   margin: 0;
   font-family: "Roboto", sans-serif;
+  font-size: var(--font-large);
 }
 
 .project__sub-title {
@@ -214,11 +262,15 @@ button {
 
 .project__list {
   display: flex;
+  padding: 48px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
 }
 
 .project__list .list__item {
   position: relative;
-  margin-right: 24px;
+  margin: 12px;
 }
 
 .project__list .list__item .item__img {
@@ -260,6 +312,7 @@ button {
 .contact__title {
   margin: 0;
   font-family: "Roboto", sans-serif;
+  font-size: var(--font-large);
 }
 
 .contact__email {
