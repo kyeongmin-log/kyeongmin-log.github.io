@@ -37,16 +37,22 @@ button {
   border: none;
 }
 
+/* Top */
+.top {
+  background-color: rgba(73, 74, 68, 0.9);
+}
+
 /* Menu */
 #menu {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
   display: flex;
   padding: 0 5%;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--color-modern-black);
-  /* background-color: rgba(73, 74, 68, 0.9); */
   color: var(--color-white);
-  border-bottom: 1px solid grey;
+  transition: all var(--animation-duration);
 }
 
 .menu__title {
@@ -78,12 +84,11 @@ button {
 
 /* Home */
 #home {
-  padding-bottom: 50px;
+  padding: 50px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: var(--color-white);
-  background-color: rgba(73, 74, 68, 0.9);
 }
 
 .home__img {

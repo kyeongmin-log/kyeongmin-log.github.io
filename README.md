@@ -60,3 +60,12 @@
 ```
 
 # JS
+
+> JS : function handleScroll
+
+```
++ 동적 기능을 추가하기 위한 main.js 파일 생성 및 적용
++ 스크롤 시 menu 배경 추가
++ 스크롤 시 home 투명도 설정
+    > home 안에 있는 요소만 투명도를 설정하기 위해 menu와 home가지는 top div 추가
+```
