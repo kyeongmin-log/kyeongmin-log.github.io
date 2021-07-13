@@ -64,6 +64,7 @@ button {
 
 .menu__title:hover {
   color: tomato;
+  cursor: pointer;
 }
 
 .menu__list {

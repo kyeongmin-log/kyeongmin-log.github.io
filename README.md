@@ -69,3 +69,10 @@
 + 스크롤 시 home 투명도 설정
     > home 안에 있는 요소만 투명도를 설정하기 위해 menu와 home가지는 top div 추가
 ```
+
+> JS : fucntion handleMenu
+
+```
++ Menu에 있는 항목을 클릭 시 해당 항목으로 이동
++ home에 있는 contact me 버튼을 클릭 시 contact 항목으로 이동
+```
