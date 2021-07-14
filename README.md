@@ -76,3 +76,20 @@
 + Menu에 있는 항목을 클릭 시 해당 항목으로 이동
 + home에 있는 contact me 버튼을 클릭 시 contact 항목으로 이동
 ```
+
+# HTML/CSS/JS
+
+> HTML/CSS/JS : Responsive and function handleToggle
+
+```
+HTML
++ menu 항목에 toggle button 추가
++ contact me 항목에서 github 아이콘 클릭 시 페이지 open
+
+CSS(Responsive)
++ 화면 크기가 작아질 시 menu list가 toggle button으로 변경
++ Projects의 이미지 크기 변경
+
+JS
++ 변경된 toggle button 클릭 시 menu list를 표시
+```

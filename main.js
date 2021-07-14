@@ -3,8 +3,8 @@ function handleScroll() {
   const menu = document.querySelector("#menu");
   const home = document.querySelector("#home");
 
-  menu.style.backgroundColor = window.scrollY != 0 ? "rgba(73, 74, 68, 0.9)" : "rgba(73, 74, 68, 0)";
-  home.style.opacity = `${100 - window.scrollY / 7}%`;
+  if (menu.classList.value !== "active") menu.style.backgroundColor = window.scrollY != 0 ? "rgba(73, 74, 68, 0.9)" : "rgba(73, 74, 68, 0)";
+  if (100 - window.scrollY / 7 > 0) home.style.opacity = `${100 - window.scrollY / 7}%`;
 }
 
 window.addEventListener("scroll", handleScroll);
@@ -18,7 +18,10 @@ function handleMenu(event) {
 
   if (menuId === "kyeongmin") sections[0].scrollIntoView({ behavior: "smooth", block: "center" });
   sections.forEach((section) => {
-    if (menuId === section.id) section.scrollIntoView({ behavior: "smooth", block: "center" });
+    if (menuId === section.id) {
+      section.scrollIntoView({ behavior: "smooth", block: "center" });
+      handleToggle();
+    }
   });
 }
 
@@ -33,3 +36,17 @@ function handleHomeBtn() {
 }
 
 homeBtn.addEventListener("click", handleHomeBtn);
+
+// menu에 있는 toggle버튼 클릭 시 메뉴 보기
+const toggleBtn = document.querySelector(".menu__toggle");
+
+function handleToggle() {
+  const menu = document.querySelector("#menu");
+  const menuList = document.querySelector(".menu__list");
+
+  menu.classList.toggle("active");
+  menuList.classList.toggle("active");
+  menu.style.backgroundColor = window.scrollY === 0 && menu.classList.value !== "active" ? "rgba(73, 74, 68, 0)" : "rgba(73, 74, 68, 0.9)";
+}
+
+toggleBtn.addEventListener("click", handleToggle);
