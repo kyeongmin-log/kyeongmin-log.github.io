@@ -93,3 +93,17 @@ CSS(Responsive)
 JS
 + 변경된 toggle button 클릭 시 menu list를 표시
 ```
+
+> CSS/JS : Change Color and function handleActiveRemove
+
+```
+CSS
++ top, menu, skill 항목의 배경 변경
+    > 어두운 계열보단 밝은 계열이 더 괜찮아보인다.
+
+JS
++ handleToggle -> handleActiveToggle 로 이름 변경
+    > 함수를 조금 더 명확하게 표기
++ handleActiveRemove funtion 추가
+    > 화면이 작아질 시 나오는 햄버거 바를 클릭하면 메뉴창이 나오는데 메뉴를 클릭 시 해당 메뉴창이 사라지도록 코딩하고 싶었다. 원래는 handdleActiveToggle을 사용하여 동작했으나 test를 해보니 메뉴창에서 home항목을 두번 클릭 시 toggle이기에 내가 원하는 방향과 반대방향으로 작동하는 것을 확인할 수 있었다. 이를 해결하기 위해 toggle이 아닌 remove를 통해 동작하도록 하였다.
+```

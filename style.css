@@ -2,7 +2,12 @@
   /* Color */
   --color-modern-black: #494a44;
   --color-white: #fffffb;
+  --color-light-blue: #73aace;
   --color-light-grey: #f9f9f9;
+  --color-pink: #fe918d;
+  --color-light-pink: #ffb5c1;
+  --color-light-yellow: #fff7d1;
+  --color-top-color: #fffffb;
   /* Font Size */
   --font-large: 48px;
   --font-medium: 28px;
@@ -39,7 +44,7 @@ button {
 
 /* Top */
 .top {
-  background-color: rgba(73, 74, 68, 0.9);
+  background-color: var(--color-light-pink);
 }
 
 /* Menu */
@@ -51,13 +56,13 @@ button {
   padding: 0 5%;
   justify-content: space-between;
   align-items: center;
-  color: var(--color-white);
+  color: var(--color-top-color);
   transition: all var(--animation-duration);
 }
 
 .menu__title {
   font-weight: 900;
-  color: var(--color-white);
+  color: var(--color-top-color);
   font-size: var(--font-medium);
   transition: color var(--animation-duration);
 }
@@ -88,7 +93,7 @@ button {
   background: none;
   right: 50px;
   font-size: var(--font-medium);
-  color: var(--color-white);
+  color: var(--color-top-color);
   display: none;
 }
 
@@ -98,13 +103,13 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: var(--color-white);
+  color: var(--color-top-color);
 }
 
 .home__img {
   margin: 50px 0;
-  width: 350px;
-  height: 350px;
+  width: 325px;
+  height: 325px;
   border-radius: 4px;
 }
 
@@ -123,7 +128,8 @@ button {
   cursor: pointer;
   padding: 12px;
   font-size: var(--font-medium);
-  background-color: var(--color-modern-black);
+  background: none;
+  border: 1px solid var(--color-white);
   border-radius: 4px;
   color: var(--color-white);
   transition: background-color var(--animation-duration);
@@ -193,7 +199,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--color-light-grey);
+  background-color: var(--color-light-yellow);
   padding: 36px;
 }
 
@@ -222,7 +228,8 @@ button {
 }
 
 .skill__list .list__item .item__icon {
-  background-color: gray;
+  background: var(--color-white);
+  border: 1px solid var(--color-modern-black);
   width: 150px;
   height: 150px;
   line-height: 180px;
@@ -232,7 +239,7 @@ button {
 
 .skill__list .list__item .item__icon i {
   font-size: 64px;
-  color: white;
+  color: var(--color-modern-black);
   transition: all var(--animation-duration);
 }
 
