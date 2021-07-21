@@ -67,11 +67,6 @@ button {
   transition: color var(--animation-duration);
 }
 
-.menu__title:hover {
-  color: tomato;
-  cursor: pointer;
-}
-
 .menu__list {
   display: flex;
 }

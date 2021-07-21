@@ -11,7 +11,7 @@ function handleScroll() {
 window.addEventListener("scroll", handleScroll);
 
 // menu 클릭 시 해당 항목으로 이동
-const menu = document.querySelector("#menu");
+const menuList = document.querySelector(".menu__list");
 
 function handdleActiveRemove() {
   const menu = document.querySelector("#menu");
@@ -24,23 +24,18 @@ function handdleActiveRemove() {
 }
 
 function handleMenu(event) {
-  const sections = document.querySelectorAll("section");
-  const menuId = event.target.innerText.toLowerCase();
+  const target = event.target;
+  const link = target.dataset.link;
 
-  if (menuId === "kyeongmin") {
-    sections[0].scrollIntoView({ behavior: "smooth" });
-    handdleActiveRemove();
-  } else {
-    sections.forEach((section) => {
-      if (menuId === section.id) {
-        section.scrollIntoView({ behavior: "smooth", block: "center" });
-        handdleActiveRemove();
-      }
-    });
-  }
+  if (link == null) return;
+
+  const scrollTo = document.querySelector(link);
+
+  scrollTo.scrollIntoView({ behavior: "smooth", block: "center" });
+  handdleActiveRemove();
 }
 
-menu.addEventListener("click", handleMenu);
+menuList.addEventListener("click", handleMenu);
 
 // home에 있는 contact me 버튼 클릭 시 Contact 항목으로 이동
 const homeBtn = document.querySelector(".home__btn");

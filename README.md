@@ -107,3 +107,19 @@ JS
 + handleActiveRemove funtion 추가
     > 화면이 작아질 시 나오는 햄버거 바를 클릭하면 메뉴창이 나오는데 메뉴를 클릭 시 해당 메뉴창이 사라지도록 코딩하고 싶었다. 원래는 handdleActiveToggle을 사용하여 동작했으나 test를 해보니 메뉴창에서 home항목을 두번 클릭 시 toggle이기에 내가 원하는 방향과 반대방향으로 작동하는 것을 확인할 수 있었다. 이를 해결하기 위해 toggle이 아닌 remove를 통해 동작하도록 하였다.
 ```
+
+> HTML/CSS/JS : Fix fucntion handleMenu
+
+```
+HTML
++ menu list에 data 값 추가
+    > 클릭 시 해당 항목의 id값을 가져오기 위해
+
+CSS
+- menu title:hover 제거
+    > 기본으로 놓는게 더 괜찮은 거 같다.
+
+JS
++ fucntion handleMenu에서 foreach로 스크롤링 되던 걸 scrollIntoView로 스크롤링 되게 수정
+    > 성능면에서도 훨씬 좋고 코드가 간결해졌다. 더욱 배우자.
+```
