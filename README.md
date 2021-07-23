@@ -2,8 +2,6 @@
 
 # Commit Description
 
-# HTML/CSS
-
 > HTML/CSS : Nav
 
 ```
@@ -59,8 +57,6 @@
 + 전체적인 글자 크기 조정
 ```
 
-# JS
-
 > JS : function handleScroll
 
 ```
@@ -76,8 +72,6 @@
 + Menu에 있는 항목을 클릭 시 해당 항목으로 이동
 + home에 있는 contact me 버튼을 클릭 시 contact 항목으로 이동
 ```
-
-# HTML/CSS/JS
 
 > HTML/CSS/JS : Responsive and function handleToggle
 
@@ -122,4 +116,10 @@ CSS
 JS
 + fucntion handleMenu에서 foreach로 스크롤링 되던 걸 scrollIntoView로 스크롤링 되게 수정
     > 성능면에서도 훨씬 좋고 코드가 간결해졌다. 더욱 배우자.
+```
+
+> CSS : Final Touch
+
+```
++ 모바일에서 보기 편하도록 있도록 CSS 추가 및 변경
 ```
