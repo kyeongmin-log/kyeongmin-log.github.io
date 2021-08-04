@@ -123,3 +123,9 @@ JS
 ```
 + 모바일에서 보기 편하도록 있도록 CSS 추가 및 변경
 ```
+
+> Update : Write down the contents
+
+```
++ 미리 적어놓은 내용 작성
+```

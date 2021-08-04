@@ -109,7 +109,8 @@ button {
 }
 
 .home__title {
-  font-family: "Roboto", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 700;
   font-size: var(--font-large);
   text-align: center;
 }
@@ -157,13 +158,14 @@ button {
   align-items: center;
 }
 
-.info__subtitle {
+.about__info .info__subtitle {
   text-align: center;
 }
 
-.info__description {
+.about__info .info__description {
   color: var(--color-modern-black);
   font-size: var(--font-regular);
+  text-align: center;
 }
 
 .about__education {
@@ -175,8 +177,8 @@ button {
 }
 
 .education__logo {
-  width: 75px;
-  height: 75px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   margin-right: 24px;
 }

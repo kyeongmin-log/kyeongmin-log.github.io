@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&family=Roboto:wght@900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;700&family=Roboto:wght@900&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/21dd925bf1.js" crossorigin="anonymous"></script>
     <script src="main.js" defer></script>
     <title>Read Me</title>
@@ -31,26 +31,27 @@
       </nav>
       <section id="home">
         <img src="./imgs/profile-img.jfif" alt="me" class="home__img" />
-        <span class="home__title">Hello, I am Web Devlopel</span>
-        <span class="home__description"
-          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quos laudantium ipsa beatae unde magnam!</span
-        >
+        <span class="home__title">안녕하세요, 저는 웹 개발자입니다!</span>
+        <span class="home__description">웹 개발을 통해 전세계에 사람들에게 미소를 짓게 만들고 싶은 꿈을 가지고 있습니다.</span>
         <button class="home__btn">CONTACT ME</button>
       </section>
     </div>
     <section id="about">
       <h1 class="about__title">ABOUT ME</h1>
       <div class="about__info">
-        <h4 class="info__subtitle">I am Front-end Developer.</h4>
+        <h4 class="info__subtitle">저는 프론트엔드 개발자입니다.</h4>
         <p class="info__description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia amet saepe dicta magnam ex. Laudantium repellendus provident
-          reiciendis natus, nisi accusantium molestias sit illo saepe quis quae! Dicta, voluptate. Cupiditate. Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Mollitia amet saepe dicta magnam ex. Laudantium repellendus provident reiciendis natus, nisi
-          accusantium molestias sit illo saepe quis quae! Dicta, voluptate. Cupiditate.
+          대학교 3학년 때, 웹 프로그래밍을 만났으며 배우는데 재미가 있어 현재도 꾸준히 공부 중입니다. 가장 자신있는 언어는 JS이며 ES6+
+          문법을 다룰 수 있고, dom객체에 접근 및 조작 할 수 있습니다. 현재 React를 배우고 있습니다. 개발자로서 부족하지만 현재까지 모르는
+          것, 어려운 것에 포기하기 않고 검색, 질문, 지속적인 공부를 통해 알아내고 해결해왔습니다.
         </p>
       </div>
       <div class="about__education">
-        <img src="./imgs/test-img.jpg" alt="" class="education__logo" />
+        <img
+          src="https://www.hallym.ac.kr/.resources/hallym_univ_theme/hallym/ko/img/abouthallym/symbol-ui-emblem3.png"
+          alt=""
+          class="education__logo"
+        />
         <div class="education__info">
           <span class="info__title">한림대학교 컴퓨터공학과 졸업</span>
           <span class="info__description">2021/02</span>
@@ -59,47 +60,58 @@
     </section>
     <section id="skill">
       <h1 class="skill__title">SKILLS</h1>
-      <h5 class="skill__sub-title">Lorem ipsum dolor sit amet consectetur.</h5>
+      <h5 class="skill__sub-title">제가 경험한 Skills입니다. 새로운 것을 언제나 환영합니다.</h5>
       <ul class="skill__list">
         <li class="list__item">
           <span class="item__icon"><i class="fas fa-laptop-code"></i></span>
           <span class="item__title">HTML/CSS</span>
-          <span class="item__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sit corrupti asperiores.</span>
+          <span class="item__description">Semantic tag에 대한 이해가 있으며, Scss 라이브러리를 활용할 수 있습니다. </span>
         </li>
         <li class="list__item">
           <span class="item__icon"><i class="fab fa-js"></i></span>
           <span class="item__title">JavaScript</span>
-          <span class="item__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sit corrupti asperiores.</span>
+          <span class="item__description">ES6+ 문법을 다룰 수 있고, dom객체에 접근 및 조작 할 수 있습니다.</span>
+        </li>
+        <li class="list__item">
+          <span class="item__icon"><i class="fab fa-github"></i></span>
+          <span class="item__title">Git</span>
+          <span class="item__description">git을 이해하고 있으며 push, pull, branch와 같은 명령어를 상황에 맞게 사용하고 있습니다.</span>
         </li>
       </ul>
     </section>
     <section id="project">
       <h1 class="project__title">PROJECTS</h1>
-      <h5 class="project__sub-title">Lorem ipsum dolor sit amet consectetur.</h5>
+      <h5 class="project__sub-title">하나를 만들더라도 진심으로</h5>
       <ul class="project__list">
         <li class="list__item">
-          <img src="./imgs/test-img.jpg" alt="project-img" class="item__img" />
-          <a href="#" class="item__link"><div class="item__description">HTML/CSS</div></a>
+          <img src="./imgs/project-js30.PNG" alt="project-img" class="item__img" />
+          <a href="https://kyeongmin-log.github.io/JavaScript30/" class="item__link" target="_blank"
+            ><div class="item__description">JS</div></a
+          >
         </li>
         <li class="list__item">
-          <img src="./imgs/test-img.jpg" alt="project-img" class="item__img" />
-          <a href="#" class="item__link"><div class="item__description">HTML/CSS</div></a>
+          <img src="https://www.youtube.com/img/desktop/yt_1200.png" alt="project-img" class="item__img" />
+          <a href="https://github.com/kyeongmin-log/Youtube-mobile" class="item__link" target="_blank"
+            ><div class="item__description">HTML/CSS</div></a
+          >
         </li>
         <li class="list__item">
-          <img src="./imgs/test-img.jpg" alt="project-img" class="item__img" />
-          <a href="#" class="item__link"><div class="item__description">JS</div></a>
+          <img src="./imgs/CD-project-img.PNG" alt="project-img" class="item__img" />
+          <a href="https://github.com/kyeongmin-log/CD_Project" class="item__link" target="_blank"
+            ><div class="item__description">React</div></a
+          >
         </li>
         <li class="list__item">
-          <img src="./imgs/test-img.jpg" alt="project-img" class="item__img" />
-          <a href="#" class="item__link"><div class="item__description">JS</div></a>
+          <img src="./imgs/basic-img.jpg" alt="project-img" class="item__img" />
+          <a href="#" class="item__link"><div class="item__description">준비중</div></a>
         </li>
         <li class="list__item">
-          <img src="./imgs/test-img.jpg" alt="project-img" class="item__img" />
-          <a href="#" class="item__link"><div class="item__description">JS</div></a>
+          <img src="./imgs/basic-img.jpg" alt="project-img" class="item__img" />
+          <a href="#" class="item__link"><div class="item__description">준비중</div></a>
         </li>
         <li class="list__item">
-          <img src="./imgs/test-img.jpg" alt="project-img" class="item__img" />
-          <a href="#" class="item__link"><div class="item__description">JS</div></a>
+          <img src="./imgs/basic-img.jpg" alt="project-img" class="item__img" />
+          <a href="#" class="item__link"><div class="item__description">준비중</div></a>
         </li>
       </ul>
     </section>
